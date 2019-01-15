@@ -1,0 +1,65 @@
+{% load static %}
+<head>
+    <title>Halloween</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'votingpoll/style.css' %}">
+</head>
+
+<body class="halloween">
+        <h1 id="hallowheading" style="color: black;">Halloween</h1>
+    
+    <div class="hallowinfo">
+        <p>Fancy a Trick or a Treat? This question is what people are faced with as the children go around 
+            from house to house in hope they will receive candy, whilst dressed up in scary costumes often representing
+            the supernatural or mythical creatures in stories and legends.
+        </p>
+        <div class="hallow"><img class="hallowpic" src="https://imgix.bustle.com/uploads/image/2017/9/29/09793d35-7261-4ee7-b16e-1d707e4c6c14-fotolia_172445508_subscription_monthly_m.jpg?w=960&h=540&fit=crop&crop=faces&auto=format&q=70">
+        
+        <p>Halloween is a holiday celebrated annually on 31 October.
+            It is the evening just before the two Christian holy days called the All Hallows’ Day:
+            All Saints’ or Hallowmas on 1 November
+            All Souls’ Day on 2 November
+            Halloween is like a community based festival and is mostly celebrated in Western countries.
+            Kids and adults wear different costumes of their choice and attend costume parties.
+            Big pumpkins are carved into lanterns and put off for display by people in their houses.
+            Some people like to visit haunted locations on Halloween where they share scary stories with each other.
+            People also play pranks tricks to scare each other.
+            Those who like to stay home watch horror movies.
+            Superstitious people light bonfires in their court yards to keep their house safe from ghosts and evil spirits.</p>
+        </div>
+        <div class="pumpkin"><img class="pumpkinpic" src="https://static-11.sinclairstoryline.com/resources/media/2615e9b5-efd6-4f6e-88c3-a834ebd92cfc-large16x9_1280x720_71031P00CLXRV.jpg?1538060267139">
+        <p>Trick or treat history is usually connected to the old custom of souling.
+            In souling, the poor will go from house to house to beg for soul cakes. In return of the soul cakes the beggars would pray for those member of the family who were recently dead.
+            Soul cakes were round in shape and were made from bread with currants.</p>
+        </div>
+        <p>According to an old tale a drunken farmer named Stingy Jack was not allowed to enter both heaven and hell after his death. His soul wandered in the darkness. He carved out a lantern out of a turnip and coal, to light his way and guide his soul.
+            The Celtics believed in this story of Jack Stingy, so they began to place Jack o’ Lanterns outside their houses. The purpose was to guide lost souls home while they wandered during the Samhain festival eve.
+            Initially the Jack o’ Lanterns were carved out from potatoes but after the potatoes famine people began to use pumpkin instead.</p>
+        
+            <p style="color: red; text-align: center;">We do not need any reason for why is halloween celebrated. If it makes us happy then we should definitely celebrate it!</p>
+        </div>
+
+        
+
+        <br><br>
+        
+    </div>
+    <script>
+        var body = $('#hallowheading');
+        var colors = ['orange', 'violet', 'crimson', 'yellow', 'orangered', 'lightgrey'];
+        var currentIndex = 0;
+        setInterval(function () {
+            body.css({
+                background: colors[currentIndex]
+            });
+            if (!colors[currentIndex]) {
+                currentIndex = 0;
+            } else {
+                currentIndex++;
+            }
+            }, 2000);
+    
+    </script>
+    
+    </body>

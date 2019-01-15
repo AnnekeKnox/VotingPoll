@@ -1,0 +1,46 @@
+{% load static %}
+<head>
+    <title>La Dia de los Muertos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'votingpoll/style.css' %}">
+</head>
+
+<body class="muertos">
+        <h1 id="deadheading" style="color: black;">La Dia de los Muertos</h1>
+    
+    <div class="deadinfo">
+        <p>The days of the dead are truly a celebration of life.  When children dance with caricatures of death, eat skull sugar molds and learn to respect that life is brief, they learn there is a circle to life and to not fear death and then are free to enjoy and appreciate every moment.</p>
+        
+        <div class="parade"><img class="paradepic" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/10320/production/_104063366_6bb0e7e4-7b40-4d20-960a-c5ae5cba17e3.jpg">
+        <p>Celebrating The Day of the Dead has a long history in Mexican Tradition.  The Day of the dead is celebrated on November 2nd.  Sometime one hears reference to “the days of the Dead” which refers to the Days of October 31 – November 2.  October 31 is Halloween or All Hallows eve. November 1 is “el Dia de los innnocentes” or the day of the children and All Saints Day.  November second is All Souls Day or the Day of the Dead. During the days of the Dead, some believe that the souls of the departed return to earth to visit with and to provide council or give advice to family and loved ones.  There is a belief that this is true every day, but that November 2nd is the day set aside to remember and honor those who have past.</p></div>
+        
+        <p>During the days of the dead, the family often takes the opportunity to visit the gravesite and pull weeds, clean any debris and decorate the graves of loved ones.  Often candles, flowers and the favorite foods of the deceased are placed on the grave and the family visits, eats, sings and tells favorite stories about those who have passed. </p>
+        <div class="ritinfo"><img class="ritualpic" src="https://www.tripsavvy.com/thmb/9yXuqSXzzK3eZb2AttbH3ep5xAo=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-648281332-5a95acd20e23d90037bcf60b.jpg">
+        <p>Many set up altars in their homes and often communities host a variety of events. Altars are usually decorated with flowers, candles, pan de muerto, ceramic skulls, and most importantly pictures of loved ones. 
+            Food placed on the altar consists of the loved ones favorite dishes and treats.  Drinks should be placed in the altar to quench the thirst of the dead after their long journey back home.  In many villages it is customary to offer alcoholic beverages.  Salt is considered the spice of life and is one the staples that are often left at the altar.  The scents of marigolds as well as burning copal (a resin of the copal tree) are thought to be most beloved by the spirits of the dead and invite them back home. 
+        </p></div>
+        <br><br>
+        <p style="text-align: center; color: magenta; font-style: italic;">The rituals used to celebrate the day are varied and colorful.  Yet, all carry the same message, celebrating the day of the dead is a true celebration of life!</p>
+    </div>
+    
+    <script>
+    
+    var body = $('#deadheading');
+    var colors = ['red', 'lightgreen', 'lightblue', 'yellow', 'pink', 'violet'];
+    var currentIndex = 0;
+    setInterval(function () {
+        body.css({
+            background: colors[currentIndex]
+        });
+        if (!colors[currentIndex]) {
+            currentIndex = 0;
+        } else {
+            currentIndex++;
+        }
+        }, 2000);
+    
+    </script>
+    
+    
+    </body>

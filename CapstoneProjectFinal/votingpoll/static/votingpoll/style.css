@@ -1,0 +1,150 @@
+li a {
+    color: yellow;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+
+.mainQuestion {
+    list-style-type: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+}
+
+#deadheading {
+    text-align: center;
+    color: black !important;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    color: gray;
+    background: white url('images/background.jpg');
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+}
+
+.muertos {
+    background: url('images/muertos.jpg');
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+}
+
+.halloween {
+    background: url('images/halloween.jpg');
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+}
+
+.logo {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: auto;
+    height: 300px;
+    width: 350px;
+}
+
+#indexImages {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.picName {
+    color: orange;
+    font-family: fantasy;
+    font-size: larger;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.options {
+    color: orange;
+}
+
+div.deadinfo {
+    background: pink;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    color: black;
+    padding: 5px;
+}
+
+.ritualpic {
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    padding-right: 12px;
+}
+
+img.pumpkinpic {
+    width: 370px;
+    height: 250px;
+    border-radius: 5px;
+    padding-right: 12px;
+    float: right;
+}
+
+.paradepic {
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    padding-right: 12px;
+    float: right;
+    padding-left: 12px;
+}
+
+.hallowpic {
+    width: 540px;
+    height: 250px;
+    border-radius: 5px;
+    padding-right: 12px;
+    float: right;
+    padding-left: 12px;
+}
+
+.ritinfo {
+    display: inline-flex;
+    padding-left: 10px;
+}
+
+.hallow {
+    display: inline-flex;
+    padding-left: 10px;
+}
+
+.hallowinfo {
+    background: lightgrey;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    color: black;
+    padding: 5px;
+}
+
+#hallowheading {
+    text-align: center;
+    color: black !important;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
